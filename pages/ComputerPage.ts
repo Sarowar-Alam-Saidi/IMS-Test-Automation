@@ -220,7 +220,10 @@ async isPreviousButtonPresent() {
   const previousButton = await this.page.$('text=← Previous');
   return previousButton !== null;
 }
-
-
+//not being used
+async isPreviousButtonPresent2() {
+  const previousButton = await this.page.$('text=← Previous');
+  return previousButton !== null;
+}
 
 }
