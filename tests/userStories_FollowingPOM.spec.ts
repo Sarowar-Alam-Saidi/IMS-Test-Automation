@@ -247,5 +247,11 @@ test('Presence of "Previous" button', async () => {
   const isPreviousButtonPresent = await computerPage.isPreviousButtonPresent();
   await expect(isPreviousButtonPresent).toBeTruthy();
 });
+//repeatative test code of previous one
+test('Presence of "Previous" button', async () => {
+  await computerPage.navigateToComputersNavPage(2);
+  const isPreviousButtonPresent = await computerPage.isPreviousButtonPresent();
+  await expect(isPreviousButtonPresent).toBeTruthy();
+});
 
 });
