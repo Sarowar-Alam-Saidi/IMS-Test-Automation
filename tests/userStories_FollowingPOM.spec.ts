@@ -248,6 +248,13 @@ test('Proper handling of concurrent requests', async () => {
   await expect(isNextButtonPresent).toBeTruthy();
 });
 
+test('Proper handling of concurrent requests', async () => {
+  await computerPage.navigateToComputersNavPage(1);
+  await computerPage.clickNextButton();
+  const isNextButtonPresent = await computerPage.isNextButtonPresent();
+  await expect(isNextButtonPresent).toBeTruthy();
+});
+
 
 
 test('Presence of "Previous" button', async () => {
